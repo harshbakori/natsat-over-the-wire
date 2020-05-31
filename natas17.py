@@ -10,7 +10,7 @@ password ='8Ps3H0GWbn5rd9S7GmAdgQNdkhPkq9cw'
 url = 'http://%s.natas.labs.overthewire.org/' %username
 
 session = requests.Session()
-seenpass = list() # xvKIqDjy4OPv7wCRgDlmj0pFsDjhdP
+seenpass = list() # xvKIqDjy4OPv7wCRgDlmj0pFsCsDjhdP
 while(len(seenpass)<32):
     for ch in characters:
         start_time = time()
