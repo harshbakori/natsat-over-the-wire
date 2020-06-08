@@ -1,0 +1,13 @@
+import requests
+import re
+username ='natas29'
+password ='airooCaiseiyee8he8xongien9euhe8b'
+
+url = 'http://%s.natas.labs.overthewire.org/' %username
+session = requests.Session()
+
+command="0"
+fc = (requests.utils.quote(command))
+
+responce = requests.get(url + "?file="+command,auth=(username,password))
+print(responce.text)
